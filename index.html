@@ -1,31 +1,24 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="chatbot.js"></script>
+    <meta charset="UTF-8">
+    <title>COVID-19 Chatbot</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="script.js"></script>
   </head>
   <body>
-    <h1 class="text-center">Disease Tracker</h1>
-    <div class="text-center">Here we can add the description</div>
-    <br>
-    <div class="mb-3">
-        <h5>Age</h5>
-        <label for="FormControlTextarea1" class="form-label"></label>
-        <textarea class="form-control" id="FormControlTextarea1" rows="3"></textarea>
+    <div class="container">
+      <h1 class="mt-5 mb-4">COVID-19 Chatbot</h1>
+      <div class="form-group">
+        <label for="user-input">Ask a question:</label>
+        <input type="text" class="form-control" id="user-input">
       </div>
-    <div class="mb-3">
-        <h5>BMI</h5>
-        <label for="FormControlTextarea1" class="form-label"></label>
-        <textarea class="form-control" id="FormControlTextarea1" rows="3"></textarea>
-     </div>
-    <div class="mb-3">
-        <h5>Gender</h5>
-        <label for="FormControlTextarea1" class="form-label"></label>
-        <textarea class="form-control" id="FormControlTextarea1" rows="3"></textarea>
-      </div>
-    <button type="button" class="btn btn-primary">Submit</button>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+      <button type="button" class="btn btn-primary" onclick="handleUserInput()">Submit</button>
+      <hr>
+      <div id="chatbot-response"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/esm/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
